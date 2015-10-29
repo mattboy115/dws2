@@ -1,0 +1,25 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.top_bar {
+  margin: 0;
+  width: inherit;
+}
+
+nav {
+    width: inherit;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+.nav_butt {
+  display: inline-block;
+}
+
+.nav_list, form {
+  display: inline-block;
+}
