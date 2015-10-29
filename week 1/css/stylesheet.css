@@ -2,14 +2,23 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
+  background-color: #3366CC;
 }
 
 .top_bar {
   margin: 0;
+  background-color: white;
   width: inherit;
+  height: 4em;
+}
+
+.top_bar a {
+    float: left;
 }
 
 nav {
+    margin-top: 4em;
+    height: 2.5em;
     width: inherit;
     margin: 0;
     padding: 0;
@@ -18,8 +27,60 @@ nav {
 
 .nav_butt {
   display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-family: arial;
+}
+
+.nav_butt a {
+text-decoration: none;
+color: white;
+font-family: arial;
+padding: 1em;
+font-size: 1.2em;
+border: .2em solid white;
+height: inherit;
+
 }
 
 .nav_list, form {
   display: inline-block;
+  margin-top: auto;
+}
+
+input{
+    width: 20em;
+    height: 2.5em;
+    background-color: white;
+    border: none;
+}
+
+form:focus {
+    outline: none;
+}
+
+.wrapper {
+    width: 
+}
+
+.layer_1 {
+    height: 30em;
+}
+
+section {
+    background: white;
+    height: inherit;
+}
+
+.title {
+    width: inherit;
+    height: 10em;
+}
+
+@media screen and (min width: 720px) {
+
+}
+
+@media screen and (min-width: 480px) {
+
 }
