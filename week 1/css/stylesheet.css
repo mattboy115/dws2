@@ -1,12 +1,19 @@
 body {
   width: 100%;
   padding: 0;
+  padding-top: 4em;
   margin: 0;
   background-color: #3366CC;
+  font-family: sans-serif;
+  text-align: center;
 }
 
 .top_bar {
   margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
   background-color: white;
   width: inherit;
   height: 4em;
@@ -14,62 +21,117 @@ body {
 
 .top_bar a {
     float: left;
+    margin-left: 10%;
+}
+
+.sign {
+    float: right;
+    margin-right: 10%;
+    padding: 0;
+}
+
+.sign a {
+    display: inline-block;
+    margin: 0;
+    margin-left: .5em;
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: grey;
+    margin-top: .25em;
 }
 
 nav {
     margin-top: 4em;
-    height: 2.5em;
     width: inherit;
     margin: 0;
     padding: 0;
-    background-color: grey;
+    background-color: #333333;
+    overflow: auto;
+}
+
+.nav_container {
+    width: 80%;
+    height: inherit;
+    margin: auto;
+    overflow: auto;
+}
+
+.nav_list {
+    float: left;
+    padding: 0;
+    margin: 0;
 }
 
 .nav_butt {
   display: inline-block;
-  text-decoration: none;
-  color: white;
-  font-family: arial;
+  margin-left: -.5em;
+  padding: .5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border: .2em solid white;
+
 }
 
 .nav_butt a {
-text-decoration: none;
-color: white;
-font-family: arial;
-padding: 1em;
-font-size: 1.2em;
-border: .2em solid white;
-height: inherit;
-
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-size: 1.4em;
+    border: .125em solid white;
+    margin: 0;
+    padding: 0;
+    border: 1px dashed red;
 }
 
-.nav_list, form {
-  display: inline-block;
-  margin-top: auto;
+form {
+  float: right;
+  margin-top: .2em;
 }
 
 input{
-    width: 20em;
-    height: 2.5em;
+    width: 18em;
+    height: inherit;
     background-color: white;
-    border: none;
+    font-size: 1em;
+    border: .1em solid black;
+    height: 2em;
+    padding: 0;
+    padding-left: .5em;
+    border-right: none;
+    float: left;
 }
 
-form:focus {
+input:focus {
     outline: none;
 }
 
+button {
+    height: inherit;
+    width: 5em;
+    padding: .35em;
+    background-color: white;
+    border: .125em solid black;
+    border-left: none;
+    }
+
+button img {
+    height: 2em;
+}
+
 .wrapper {
-    width: 
+    width: 80%;
+    margin: auto;
+    background-color: grey;
 }
 
 .layer_1 {
-    height: 30em;
+    height: 25em;
 }
 
 section {
     background: white;
-    height: inherit;
+    height: 100%;
 }
 
 .title {
@@ -77,10 +139,102 @@ section {
     height: 10em;
 }
 
-@media screen and (min width: 720px) {
-
+footer {
+    background-color: #333333;
+    color: white;
+    width: 100%;
+    padding-bottom: 1em;
 }
 
-@media screen and (min-width: 480px) {
+.footer_logo {
+    height: 10em;
+    float: left;
+    border: 1px dashed red;
+    margin: 1em;
+}
+.f_link_sets {
+    float: right;
+    width: 80%;
+    border: 1px dashed red;
+    text-align: left;
+}
 
+.footer_links {
+    display: inline-block;
+    list-style-type: none;
+    float:right;
+    border-left: .1em white solid;
+    padding-left: 10%;
+    padding-right: 10%;
+    border: 1px dashed red;
+}
+
+.footer_title {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-decoration: underline;
+
+}
+.copyright {
+    font-size: .75em;
+    clear: both;
+    margin: auto;
+    width: inherit;
+    border: 1px dashed red;
+}
+
+.footer_container {
+    width: 80%;
+    margin: auto;
+    border: 1px dashed red;
+}
+
+@media screen and (max-width:1300px) {
+    .footer_links {
+        padding-left: 5%;
+        padding_right: 5%;
+        float: none;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .f_link_sets {
+        float: right;
+    }
+
+    .footer_links {
+        padding-left: 2%;
+        padding_right: 2%;
+
+    }
+    .logo_container {
+        width: 100%;
+    }
+    .footer_logo {
+        float: none;
+        margin: auto;
+    }
+
+@media screen and (max-width: 768px) {
+    .logo_container {
+        width: 100%;
+    }
+    .footer_logo {
+        float: none;
+        margin: auto;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo_container {
+        width: 100%;
+    }
+    .footer_logo {
+        float: none;
+        margin: auto;
+        height: 5em;
+    }
 }

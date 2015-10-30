@@ -2,79 +2,102 @@
 
 <html>
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/stylesheet.css" type="text">
+    <link rel="stylesheet" href="css/stylesheet.css">
     <title>WorldSurf</title>
 </head>
 <body>
-
+<!--Login and Title Bar-->
     <div class="top_bar">
-        <a href="#"><img src=#/></a>
-        <a href="#">Log In</a>
-        <a href="#">Sign Up</a>
+        <a href="#"><img alt="worldsurf logo" src=#/></a>
+        <div class="sign">
+            <a href="#">Log In</a>
+            <a href="#">Sign Up</a>
+        </div>
     </div>
-
+<!--Navigation Bar-->
     <nav>
-        <ul class="nav_list">
-            <li class="nav_butt"><a href="#">Home</a></li>
-            <li class="nav_butt"><a href="#">Galleries</a></li>
-            <li class="nav_butt"><a href="#">Forecasts</a></li>
-            <li class="nav_butt"><a href="#">Travel</a></li>
-            <li class="nav_butt"><a href="#">Countries</a></li>
-        </ul>
-
-        <form>
-            <input type="text" name="search">
-        </form>
+        <div class="nav_container">
+            <ul class="nav_list">
+                <li class="nav_butt"><a href="#">Home</a></li>
+                <li class="nav_butt"><a href="#">Galleries</a></li>
+                <li class="nav_butt"><a href="#">Forecasts</a></li>
+                <li class="nav_butt"><a href="#">Travel</a></li>
+                <li class="nav_butt"><a href="#">Countries</a></li>
+            </ul>
+    <!--Form and Submit button in Nav bar-->
+            <form>
+                <input type="text" name="search" placeholder="Search a Destination">
+                <button type="submit">
+                    <img alt="serach button" src="images/search_button.png"/>
+                </button>
+            </form>
+        </div>
     </nav>
-
+<!--Rest of Website-->
     <div class="wrapper">
         <div class="layer_1">
             <section class="slider">
+                <h3 class="title">Image Gallery</h3>
             </section>
-            <select class="ad1">
-            </section>
+            <div class="ad1">
+            </div>
         </div>
 
         <div class="layer_2">
-            <div class="app"></div>
-            <div class="photos"></div>
-            <div class="news"></div>
-            <div class="cams"></div>
-            <div class="poll"></div>
+            <div class="app">
+            </div>
+            <section class="photos">
+                <h3 class="title">Image Gallery</h3>
+            </section>
+            <section class="news">
+                <h3 class="title">Worldsurf News</h3>
+            </section>
+            <section class="cams">
+                <h3 class="title">Destination Cams</h3>
+            </section>
+            <section class="poll">
+                <h3 class="title">Polls</h3>
+            </section>
         </div>
-
-        <footer>
-            <img src="footer_logo.png">
-            <ul class="footer_links">
-                <li="footer_links_title"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul class="footer_links">
-                <li="footer_links_title"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul class="footer_links">
-                <li="footer_links_title"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <p class="copyright">2015 Worldsurf Terms &amp Conditions and Privacy Policy</p>
-        </footer>
     </div>
 
-
+    <footer>
+        <div class="footer_container">
+            <div class="logo_container">
+                <img class="footer_logo" alt="footer_logo" src="images/footer_logo.png"/>
+            </div>
+            <div class="f_link_sets">
+                <ul class="footer_links">
+                    <li class="footer_title">Sections</li>
+                    <li>Home</li>
+                    <li>Galleries</li>
+                    <li>Forecasts</li>
+                    <li>Countries</li>
+                    <li>Travel</li>
+                </ul>
+                <ul class="footer_links">
+                    <li class="footer_title">Support</li>
+                    <li>Contact</li>
+                    <li>My Account</li>
+                    <li>Contact Support</li>
+                    <li>FAQ</li>
+                </ul>
+                <ul class="footer_links">
+                    <li class="footer_title">Tools</li>
+                    <li>Widgets</li>
+                    <li>Worldsurf Mobile</li>
+                    <li>Search Worldsurf</li>
+                    <li>Search Worldsurf</li>
+                    <li>Cams</li>
+                    <li>News</li>
+                </ul>
+            </div>
+        <p class="copyright">&copy;2015 Worldsurf Terms &amp; Conditions and Privacy Policy</p>
+        </div>
+    </footer>
 
 </body>
 </html>
