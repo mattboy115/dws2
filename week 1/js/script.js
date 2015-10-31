@@ -1,1 +1,1 @@
-border: red 1px solid;
+border: red 1px dashed;

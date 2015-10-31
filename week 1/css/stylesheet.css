@@ -1,5 +1,4 @@
 body {
-    width: 100%;
     padding: 0;
     padding-top: 4em;
     margin: 0;
@@ -10,7 +9,7 @@ body {
 
 .top_bar {
     margin: 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -20,7 +19,7 @@ body {
 }
 
 .top_bar_container {
-    width: 62.5em;
+    width: 100%;
     margin: auto;
 }
 
@@ -33,7 +32,10 @@ body {
 }
 
 .sign {
-    float: right;
+    text-align:center;
+    display:inline-block;
+    margin-left: 800px;
+    margin-right:200px;
 }
 
 .sign a {
@@ -67,6 +69,7 @@ nav {
     float: left;
     padding: 0;
     margin: 0;
+    width: 50%;
 }
 
 .nav_butt {
@@ -94,7 +97,7 @@ nav {
 
 form {
     float: right;
-    width: 37.65%;
+    width: 40%;
     margin: 0;
 }
 
@@ -125,6 +128,9 @@ button {
     float: right;
 }
 
+button, form, input {
+    border: red dashed 1px;
+}
 
 button img {
     height: 2em;
@@ -200,17 +206,16 @@ footer {
     border: 1px dashed red;
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:960px) {
     .footer_links {
         padding-left: 5%;
         padding_right: 5%;
         float: none;
         margin: auto;
-        text-align: center;
     }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 640px) {
     .top_bar_container {
         width: 100%;
     }
@@ -240,21 +245,30 @@ footer {
         margin: auto;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 320px) {
         .logo_container {
             width: 100%;
         }
+
+        .footer_links {
+            text-align: center;
+        }
+
         .footer_logo {
             float: none;
             margin: auto;
-
         }
     }
 
     @media screen and (max-width: 426px) {
+        body {
+            padding-top: 0;
+        }
         .top_bar {
             background-color: green;
             height: 27em;
+            position: static;
+            margin-top: -48px;
         }
 
         .bar_logo1 {
@@ -262,8 +276,8 @@ footer {
         }
 
         .bar_logo2 {
-            display: inline-block;
-            margin-top: 3em;
+            display: block;
+            margin: auto;
             width: 6em;
         }
 
@@ -298,6 +312,12 @@ footer {
             background-color: grey;
             border: none;
             margin: .3em;
+        }
+
+        .footer_links {
+            width: 100%;
+            margin: auto;
+            font-size: .75em;
         }
 
         .logo_container {
