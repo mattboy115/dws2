@@ -1,33 +1,39 @@
 body {
-  width: 100%;
-  padding: 0;
-  padding-top: 4em;
-  margin: 0;
-  background-color: #3366CC;
-  font-family: sans-serif;
-  text-align: center;
+    width: 100%;
+    padding: 0;
+    padding-top: 4em;
+    margin: 0;
+    background-color: #3366CC;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 .top_bar {
-  margin: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  background-color: white;
-  width: inherit;
-  height: 4em;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: white;
+    width: inherit;
+    height: 4em;
 }
 
-.top_bar a {
+.top_bar_container {
+    width: 62.5em;
+    margin: auto;
+}
+
+.bar_logo1 {
     float: left;
-    margin-left: 10%;
+}
+
+.bar_logo2 {
+    display: none;
 }
 
 .sign {
     float: right;
-    margin-right: 10%;
-    padding: 0;
 }
 
 .sign a {
@@ -51,7 +57,7 @@ nav {
 }
 
 .nav_container {
-    width: 80%;
+    width: 62.5em;
     height: inherit;
     margin: auto;
     overflow: auto;
@@ -64,42 +70,45 @@ nav {
 }
 
 .nav_butt {
-  display: inline-block;
-  margin-left: -.5em;
-  padding: .5em;
-  padding-left: 2em;
-  padding-right: 2em;
-  border: .2em solid white;
+    display: inline-block;
+    padding: .5em;
+    border: .2em solid white;
+    border-top: none;
 
 }
 
 .nav_butt a {
     text-decoration: none;
+    height: inherit;
     color: white;
     font-family: arial;
     font-size: 1.4em;
-    border: .125em solid white;
     margin: 0;
     padding: 0;
-    border: 1px dashed red;
+}
+
+.nav_butt p {
+    margin: 0;
+    padding: 0;
 }
 
 form {
-  float: right;
-  margin-top: .2em;
+    float: right;
+    width: 37.65%;
+    margin: 0;
 }
 
 input{
-    width: 18em;
+    width: 15em;
     height: inherit;
     background-color: white;
-    font-size: 1em;
+    font-size: 1.2em;
     border: .1em solid black;
+    border-right: none;
+    float: right;
     height: 2em;
     padding: 0;
-    padding-left: .5em;
-    border-right: none;
-    float: left;
+    padding-left: 5%;
 }
 
 input:focus {
@@ -113,14 +122,16 @@ button {
     background-color: white;
     border: .125em solid black;
     border-left: none;
-    }
+    float: right;
+}
+
 
 button img {
     height: 2em;
 }
 
 .wrapper {
-    width: 80%;
+    width: 62.5em;
     margin: auto;
     background-color: grey;
 }
@@ -199,7 +210,19 @@ footer {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 999px) {
+    .top_bar_container {
+        width: 100%;
+    }
+
+    .nav_container {
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
     .f_link_sets {
         float: right;
     }
@@ -217,24 +240,72 @@ footer {
         margin: auto;
     }
 
-@media screen and (max-width: 768px) {
-    .logo_container {
-        width: 100%;
-    }
-    .footer_logo {
-        float: none;
-        margin: auto;
+    @media screen and (max-width: 768px) {
+        .logo_container {
+            width: 100%;
+        }
+        .footer_logo {
+            float: none;
+            margin: auto;
 
+        }
     }
-}
 
-@media screen and (max-width: 480px) {
-    .logo_container {
-        width: 100%;
+    @media screen and (max-width: 426px) {
+        .top_bar {
+            background-color: green;
+            height: 27em;
+        }
+
+        .bar_logo1 {
+            display: none;
+        }
+
+        .bar_logo2 {
+            display: inline-block;
+            margin-top: 3em;
+            width: 6em;
+        }
+
+        .sign {
+            float: none;
+            margin: auto;
+            font-size: .75em;
+            width: 100%;
+        }
+
+        .bar_logo2, .sign {
+            display: block;
+        }
+
+        form {
+            width: 80%;
+            float: left;
+            margin-left: 10%;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            margin: .3em;
+            padding: none;
+            text-align: center;
+
+        }
+
+        button {
+            width: 100%;
+            background-color: grey;
+            border: none;
+            margin: .3em;
+        }
+
+        .logo_container {
+            width: 100%;
+        }
+        .footer_logo {
+            float: none;
+            margin: auto;
+            height: 5em;
+        }
     }
-    .footer_logo {
-        float: none;
-        margin: auto;
-        height: 5em;
-    }
-}
