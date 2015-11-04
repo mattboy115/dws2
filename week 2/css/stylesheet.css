@@ -7,6 +7,7 @@ header {
     background-image: url('../images/header.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    height: 300px;
 }
 
 #first_container {
@@ -14,6 +15,7 @@ header {
 }
 
 .icon {
-    width: 50%;
+    margin-top: 2em;
+    width: 12em;
     border-radius: 100%;
 }
