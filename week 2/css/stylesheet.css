@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'custom';
+    src: url('../fonts/coda.ttf');
+}
+
 body {
     background-image: url('../images/background.png');
     text-align: center;
@@ -10,12 +15,57 @@ header {
     height: 300px;
 }
 
+h1 {
+    margin-top: 1em;
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'custom', cursive;
+    color: white;
+	text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+}
+
+header p {
+    font-size: 2em;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .75);
+}
+
+h2 {
+    font-family: 'custom';
+}
+
 #first_container {
     background-color: white;
 }
 
 .icon {
     margin-top: 2em;
-    width: 12em;
+    width: 60%;
+    max-width: 20em;
     border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        margin-top: .5em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h1 {
+        margin-top: 2em;
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    h1 {
+        margin-top: 2.5em;
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.5em;
+    }
 }
