@@ -171,7 +171,7 @@ img.avatar {
     border-radius: 100%;
     border: 5px #fff solid;
     width: 90%;
-    transition: 300ms;
+    transition: 100ms;
 }
 
 img.avatar:hover {
@@ -180,7 +180,7 @@ img.avatar:hover {
     margin-left: -10px;
     margin-top: -10px;
     margin-bottom: -10px;
-    transition: 300ms;
+    transition: 100ms;
 }
 
 img:hover {
