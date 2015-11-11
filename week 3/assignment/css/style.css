@@ -154,11 +154,13 @@ header.main_nav {
     margin: 0;
     border: solid 3px #fff;
     border-radius: 50px;
+    transition: 200ms;
 }
 
 .logo a:hover {
     background-color: #fff;
     color: #cc0000;
+    transition: 200ms;
 }
 
 /* Images & Media
