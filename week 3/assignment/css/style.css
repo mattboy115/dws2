@@ -28,6 +28,41 @@ _______________________________________________*/
     margin-top: 16%;
 }
 
+.intro {
+    text-align: center;
+    padding: 1%;
+    padding-top: 0;
+    border: solid 5px #cc0000;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.intro a {
+    color: #cc0000;
+    font-weight: bold;
+    transition: 100ms;
+}
+
+.intro a:hover {
+    font-size: 1.8em;
+    transition: 100ms;
+}
+
+.intro h2 {
+    background-color: #cc0000;
+    color: #fff;
+    width: 102.5%;
+    margin-left: -1.1%;
+    margin-top: 0;
+}
+
 .row {
     padding: 2% 0;
 }
