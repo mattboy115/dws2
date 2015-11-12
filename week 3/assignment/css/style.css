@@ -25,16 +25,14 @@ _______________________________________________*/
 
 .main {
     padding-top: 3%;
-    margin-top: 14%;
+    margin-top: 17%;
 }
 
 .intro {
     text-align: center;
-    padding: 1%;
-    padding-top: 0;
-    border: solid 5px #cc0000;
+    border: solid 5px #ad0000;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 7px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -56,11 +54,19 @@ _______________________________________________*/
 }
 
 .intro h2 {
-    background-color: #cc0000;
+    background: rgba(204,0,0,1);
+background: -moz-linear-gradient(top, rgba(204,0,0,1) 0%, rgba(173,0,0,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(204,0,0,1)), color-stop(100%, rgba(173,0,0,1)));
+background: -webkit-linear-gradient(top, rgba(204,0,0,1) 0%, rgba(173,0,0,1) 100%);
+background: -o-linear-gradient(top, rgba(204,0,0,1) 0%, rgba(173,0,0,1) 100%);
+background: -ms-linear-gradient(top, rgba(204,0,0,1) 0%, rgba(173,0,0,1) 100%);
+background: linear-gradient(to bottom, rgba(204,0,0,1) 0%, rgba(173,0,0,1) 100%);
     color: #fff;
-    width: 102.5%;
-    margin-left: -1.1%;
-    margin-top: 0;
+    width: 101.1%;
+    margin-left: -.5%;
+    margin-top: -3.5%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 .row {
@@ -118,7 +124,7 @@ header.main_nav {
     display: block;
     position: fixed;
     width: 100%;
-    margin-top: -14%;
+    margin-top: -17%;
     z-index: 500;
     box-shadow: 2px 2px 7px rgba(0,0,0, 0.75);
 }
@@ -139,8 +145,6 @@ header.main_nav {
     font-weight: bold;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
-
-
 
 .logo a {
     font-size: 5em;
@@ -185,10 +189,6 @@ img.avatar:hover {
     transition: 100ms;
 }
 
-img:hover {
-    opacity: 0.8;
-}
-
 .portfolio img {
     border-top-left-radius: .5em;
     border-top-right-radius: .5em;
@@ -201,6 +201,34 @@ img:hover {
     border-top-right-radius: .6em;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
+
+a.image-link {
+    position: relative;
+    width: 100%;
+    text-decoration: none !important;
+    text-align: center;
+  }
+  a.image-link:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    margin-bottom: 3px;
+    width: inherit;
+    background: rgba(0,0,0,0.75);
+    text-decoration: none !important;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+  }
+  a.image-link:hover:after, a.image-link:focus:after {
+    opacity: 1.0;
+  }
 
 /* Footer
 _______________________________________________*/
@@ -277,16 +305,22 @@ _______________________________________________*/
 
     .main {
         padding-top: 3%;
-        margin-top: 17%;
+        margin-top: 19%;
     }
 
     header.main_nav {
-        margin-top: -17%;
+        margin-top: -19%;
     }
 
     .logo a {
         font-size: 4em;
 
+    }
+
+    .intro h2 {
+        width: 101.4%;
+        margin-left: -.7%;
+        margin-top: -3.5%;
     }
 }
 
@@ -294,7 +328,7 @@ _______________________________________________*/
 
     .main {
         padding-top: 3%;
-        margin-top: 18%;
+        margin-top: 20%;
     }
 
     .logo a {
@@ -307,7 +341,7 @@ _______________________________________________*/
     }
 
     header.main_nav {
-        margin-top: -18%;
+        margin-top: -20%;
     }
 
     img.avatar {
@@ -332,6 +366,12 @@ _______________________________________________*/
     .social {
         font-size: .65em;
     }
+
+    .intro h2 {
+        width: 101.5%;
+        margin-left: -.8%;
+        margin-top: -3.5%;
+    }
 }
 
 @media (max-width: 550px) {
@@ -346,7 +386,15 @@ _______________________________________________*/
 
     .main {
         padding-top: 3%;
-        margin-top: 18%;
+        margin-top: 26%;
+    }
+
+    header.main_nav {
+        margin-top: -26%;
+    }
+
+    .row2 {
+        margin-top: 5%;
     }
 
     .portfolio {
@@ -359,21 +407,32 @@ _______________________________________________*/
 
     .site {
         font-size: 1.5em;
-
+    }
     .row {
         padding: 0;
-    }
-
-    header.main_nav {
-        margin-top: -26%;
     }
 
     .link_lists a {
         font-size: 1.4em;
     }
+
+    .intro h2 {
+        width: 102.4%;
+        margin-left: -1.2%;
+        margin-top: -3.5%;
+    }
 }
 
 @media screen and (max-width: 400px) {
+    .main {
+        padding-top: 3%;
+        margin-top: 22%;
+    }
+
+    header.main_nav {
+        margin-top: -22%;
+    }
+
     .logo a {
         font-size: 1.6em;
     }
@@ -400,5 +459,11 @@ _______________________________________________*/
 
     p.bio {
         font-size: 1.25em;
+    }
+
+    .intro h2 {
+        width: 103.6%;
+        margin-left: -1.8%;
+        margin-top: -3.5%;
     }
 }
