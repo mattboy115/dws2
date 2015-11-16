@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: green;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Nav
+----------------------------------------------------*/
+
+nav {
+    background-color: #333;
+    margin: 0;
+    padding: 1em;
+    border-bottom: solid 1px #666;
+}
+
+nav .nav_list {
+    margin: 0;
+    margin-left: 2%;
+    padding: 0;
+}
+
+.nav_list li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav a {
+    text-decoration: none;
+    color: #CCCCCC;
+    padding: 1em;
+    transition: 200ms;
+}
+
+nav a:hover {
+    background: rgba(76,76,76,1);
+    background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(0,0,0,1) 27%, rgba(43,43,43,1) 82%, rgba(19,19,19,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(27%, rgba(0,0,0,1)), color-stop(82%, rgba(43,43,43,1)), color-stop(100%, rgba(19,19,19,1)));
+    background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(0,0,0,1) 27%, rgba(43,43,43,1) 82%, rgba(19,19,19,1) 100%);
+    background: -o-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(0,0,0,1) 27%, rgba(43,43,43,1) 82%, rgba(19,19,19,1) 100%);
+    background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(0,0,0,1) 27%, rgba(43,43,43,1) 82%, rgba(19,19,19,1) 100%);
+    background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(0,0,0,1) 27%, rgba(43,43,43,1) 82%, rgba(19,19,19,1) 100%);
+}
+
+nav img {
+    height: 40px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    vertical-align: top;
+}
+
+.ico {
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
+/*Header
+----------------------------------------------------*/
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/header.jpg');
+    height: 300px;
+    width: 100%;
+    padding-top: 35px;
+    border-bottom: 3px solid #333;
+    position: relative;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4em;
+    font-family: 'Poiret One', cursive;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.75);
+}
+
+header p {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.75);
+    font-size: 1.5em;
+
+}
+
+/*General
+----------------------------------------------------*/
+
+.wrapper {
+    margin: 0 auto;
+    width: 72em;
+}
+
+h2 {
+    font-family: 'Poiret One', cursive;
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px #000;
+    margin-bottom: 0;
+}
+
+.grid {
+    width: 100%;
+}
+
+small {
+    color: #666;
+}
+
+ul.rig {
+	list-style: none;
+	font-size: 0px;
+    width: 100%;
+    margin-left: -3.45%;
+}
+ul.rig li {
+	display: inline-block;
+    width: 20%;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #ddd;
+	font-size: 1em;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px #ddd;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+ul.rig li img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px;
+}
+ul.rig li h3 {
+	margin: 0 0 5px;
+}
+ul.rig li p {
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #999;
+}
+
+/*Footer
+----------------------------------------------------*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+}
+
+.footer_cont {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: orange;
+    text-shadow: 1px 1px 1px #CC8400;
+}
+
+footer p {
+    font-size: .75em;
+    text-align: center;
+}
+
+/*Media Queries
+----------------------------------------------------*/
+
+@media (max-width: 1200px) {
+    header {
+        height: 250px;
+        padding-top: 25px;
+    }
+
+    .wrapper {
+        width: 62.5em;
+    }
+
+    ul.rig {
+        margin-left: -3.99%;
+    }
+
+    ul.rig li {
+    	display: inline-block;
+        width: 25%;
+    	padding: 10px;
+    	background: #fff;
+    	border: 1px solid #ddd;
+    	font-size: 1em;
+    	font-size: 1rem;
+    	vertical-align: top;
+    	box-shadow: 0 0 5px #ddd;
+    	box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+    }
+}
+
+@media (max-width: 1050px) {
+    .wrapper {
+        width: 52.5em;
+    }
+
+    ul.rig {
+        margin-left: -4.79%;
+    }
+
+    ul.rig li {
+        display: inline-block;
+        width: 25%;
+        padding: 10px;
+        background: #fff;
+        border: 1px solid #ddd;
+        font-size: 1em;
+        font-size: 1rem;
+        vertical-align: top;
+        box-shadow: 0 0 5px #ddd;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+}
+
+@media (max-width: 860px) {
+    .wrapper {
+        width: 44em;
+    }
+
+    ul.rig {
+        margin-left: -5.79%;
+    }
+
+    ul.rig li {
+        display: inline-block;
+        width: 25%;
+        font-size: 1em;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    ul.rig {
+        margin-left: -7.4%;
+    }
+}
+
+@media (max-width: 550px) {
+    nav {
+        padding-top: -30px;
+    }
+    .nav_list li {
+        display: block;
+        vertical-align: top;
+        text-align: center;
+        letter-spacing: 4px;
+    }
+
+    .nav_list:first-child {
+        margin-top: -20px;
+    }
+
+    nav a:hover {
+        background: none;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .ico {
+        visibility: hidden;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+    .grid {
+        margin-left: -2.55em;
+    }
+    ul.rig {
+        margin-left: 0;
+    }
+    ul.rig li {
+        display: inline-block;
+        width: 100%;
+        padding: 6.4789%;
+        padding-bottom: 40px;
+        background: #fff;
+        border: none;
+        font-size: 1em;
+    }
+
+    ul.rig li img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 10px;
+        border: 1px solid #000;
+    }
+    ul.rig li h3 {
+        margin: 0 0 5px;
+        font-size: 1.3em;
+    }
+    ul.rig li p {
+        font-size: 1em;
+        line-height: 1.5em;
+        color: #999;
+    }
+}
+
+@media (min-width: 400px) {}

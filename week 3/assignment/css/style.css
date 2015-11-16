@@ -45,12 +45,16 @@ _______________________________________________*/
 .intro a {
     color: #cc0000;
     font-weight: bold;
-    transition: 100ms;
+    transition: 200ms ease;
 }
 
 .intro a:hover {
     font-size: 1.8em;
-    transition: 100ms;
+    -webkit-transition: 200ms ease;
+    -moz-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
+
 }
 
 .intro h2 {
@@ -158,13 +162,13 @@ header.main_nav {
     margin: 0;
     border: solid 3px #fff;
     border-radius: 50px;
-    transition: 200ms;
+    transition: .5s ease;
 }
 
 .logo a:hover {
     background-color: #fff;
     color: #cc0000;
-    transition: 200ms;
+    transition: .5s ease;
 }
 
 /* Images & Media
@@ -177,7 +181,7 @@ img.avatar {
     border-radius: 100%;
     border: 5px #fff solid;
     width: 90%;
-    transition: 100ms;
+    transition: all 200ms ease;
 }
 
 img.avatar:hover {
@@ -186,7 +190,7 @@ img.avatar:hover {
     margin-left: -10px;
     margin-top: -10px;
     margin-bottom: -10px;
-    transition: 100ms;
+    transition: all 200ms ease;
 }
 
 .portfolio img {
