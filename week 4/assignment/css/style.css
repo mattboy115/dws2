@@ -190,6 +190,10 @@ ul.rig li p {
     color: orange;
 }
 
+.selected {
+    color: grey;
+}
+
 /*Footer
 ----------------------------------------------------*/
 
