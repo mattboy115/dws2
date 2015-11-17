@@ -19,7 +19,7 @@ nav {
 
 nav .nav_list {
     margin: 0;
-    margin-left: 2%;
+    margin-left: 5%;
     padding: 0;
 }
 
@@ -56,6 +56,16 @@ nav img {
 .ico {
     font-family: 'Poiret One', cursive;
     font-weight: bold;
+}
+
+.sign {
+    float: right;
+    margin-top: -20px;
+    margin-right: 5%;
+}
+
+.sign li {
+    display: inline-block;
 }
 
 /*Header
