@@ -11,14 +11,41 @@
     margin-bottom: 10px;
 }
 
+.upload_form {
+    width: 100%;
+    height: 260px;
+}
+
 fieldset input {
-    height: 30px;
-    font-size: 1.3em;
+    height: 40px;
+    font-size: 1.2em;
+    font-weight: normal;
+    padding: 0;
+    border-radius: 5px;
+    border: none;
+    vertical-align: top;
+    box-shadow: 1px 1px 3px;
 }
 
 fieldset input:first-child {
     width: 60%;
-    font
+    padding-left: 4%;
+}
+
+fieldset input:nth-child(2), fieldset input:nth-child(4) {
+    color: #444;
+    background: rgb(232,232,232); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(232,232,232,1) 0%, rgba(178,178,178,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(232,232,232,1) 0%,rgba(178,178,178,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(232,232,232,1) 0%,rgba(178,178,178,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#b2b2b2',GradientType=0 );
+    width: 31%;
+    margin-right: 4%;
+}
+
+fieldset input:nth-child(4) {
+    margin-top: 10px;
+    color: #999;
 }
 
 .browse {
@@ -67,7 +94,7 @@ fieldset input:first-child {
 
 iframe {
     width: 100%;
-    height: 100%;
+    height: 310px;
 }
 
 /*Media Queries*/
