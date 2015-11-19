@@ -9,6 +9,7 @@
     <title>Final Assignment</title>
     <!--Css-->
     <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/upload.css" media="screen">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
     <!--Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -44,12 +45,22 @@
                 <input type="submit" name="name" value="Search">
             </form>
         </header>
-        <h2>How to Upload</h2>
+        <h2>Upload Cover Art</h2>
         <div class="well">
             <div class="browse">
-
+                <fieldset>
+                    <form class="upload_form" action="index.html" method="post">
+                        <input type="url" name="url" placeholder="Enter a Valid URL">
+                        <input type="button" name="browse" value="Browse...">
+                        <div class="drop">
+                            
+                        </div>
+                    </form>
+                </fieldset>
             </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UchW6dpvk1I" frameborder="0" allowfullscreen></iframe>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/UchW6dpvk1I" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
 
     </div>

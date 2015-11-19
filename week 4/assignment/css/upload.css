@@ -1,0 +1,70 @@
+.well {
+    width: 98%;
+    background-color: #999;
+    border: 1px #666 solid;
+    border-right: #333 2px solid;
+    border-bottom: #333 2px solid;
+    border-radius: 5px;
+    padding: 1%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    height: 200px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.browse {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.video {
+    width: 49%;
+    height: 100%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1050px) {
+
+}
+
+@media screen and (max-width: 860px) {
+    .browse{
+        display: block;
+        width: 100%;
+    }
+
+    .video {
+        display: block;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+}
+
+@media screen and (max-width: 550px) {
+
+}
+
+@media screen and (max-width: 400px) {
+
+}

@@ -5,6 +5,7 @@ body {
     background-position: fixed;
     background: green;
     font-family: 'Roboto', sans-serif;
+
 }
 
 /*Nav
@@ -98,13 +99,13 @@ header p {
     font-size: 1.5em;
 }
 
-input {
+header input {
     border: none;
     height: 40px;
     box-shadow: 2px 2px 5px #000;
 }
 
-input:first-child {
+header input:first-child {
     margin-right: -4px;
     width: 30%;
     font-size: 1.3em;
@@ -113,13 +114,13 @@ input:first-child {
     border-bottom-left-radius: 4px;
 }
 
-input:first-child:focus {
+header input:first-child:focus {
     -moz-box-shadow:    inset 0 0 15px #000000;
     -webkit-box-shadow: inset 0 0 15px #000000;
     box-shadow:         inset 0 0 15px #000000;
 }
 
-input:last-child {
+ header input:last-child {
     width: 10%;
     background: #4c4c4c; /* Old browsers */
     background: -moz-linear-gradient(top, #4c4c4c 0%, #474747 29%, #2c2c2c 50%, #000000 52%, #111111 91%, #131313 100%); /* FF3.6-15 */
@@ -132,7 +133,7 @@ input:last-child {
     border-bottom-right-radius: 4px;
 }
 
-input:last-child:hover {
+ header input:last-child:hover {
     background: #4c4c4c; /* Old browsers */
     background: -moz-linear-gradient(top, #4c4c4c 0%, #898989 7%, #2c2c2c 39%, #000000 65%, #545454 92%, #131313 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #4c4c4c 0%,#898989 7%,#2c2c2c 39%,#000000 65%,#545454 92%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
@@ -140,7 +141,7 @@ input:last-child:hover {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
 }
 
-input:last-child:active {
+ header input:last-child:active {
     background: #bfbfbf; /* Old browsers */
     background: -moz-linear-gradient(top, #bfbfbf 0%, #2b2b2b 6%, #232323 49%, #000000 54%, #0a0a0a 93%, #3f3f3f 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #bfbfbf 0%,#2b2b2b 6%,#232323 49%,#000000 54%,#0a0a0a 93%,#3f3f3f 100%); /* Chrome10-25,Safari5.1-6 */
@@ -148,7 +149,7 @@ input:last-child:active {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfbfbf', endColorstr='#3f3f3f',GradientType=0 );
 }
 
-input:focus {
+ header input:focus {
     outline: none;
 }
 
@@ -300,7 +301,10 @@ footer p {
 @media (max-width: 1200px) {
     header {
         height: 250px;
-        padding-top: 25px;
+    }
+
+    header h1 {
+        margin-top: 0;
     }
 
     .wrapper {
@@ -327,6 +331,16 @@ footer p {
 }
 
 @media (max-width: 1050px) {
+    nav .nav_list {
+        display: blockk;
+        width: 100%;
+    }
+
+    nav .sign {
+        margin-left: 5%;
+        margin-top: 30px;
+        display: block;
+    }
     .wrapper {
         width: 52.5em;
     }
@@ -382,6 +396,16 @@ footer p {
         font-size: 1rem;
     }
 
+    header input:first-child {
+        width: 50%;
+        font-size: 1.2em;
+    }
+
+     header input:last-child {
+        width: 15%;
+        font-size: 1.2em;
+    }
+
 }
 
 @media (max-width: 720px) {
@@ -416,6 +440,7 @@ footer p {
 }
 
 @media (max-width: 550px) {
+    /*Nav*/
     nav {
         padding-top: -30px;
     }
@@ -432,6 +457,17 @@ footer p {
         letter-spacing: 4px;
     }
 
+    .sign {
+        margin-right: -4%;
+    }
+
+    nav .sign li {
+        display: block;
+        text-align: center;
+        padding: 0;
+        letter-spacing: 4px;
+    }
+
     .nav_list:first-child {
         margin-top: -20px;
     }
@@ -440,6 +476,7 @@ footer p {
         background: none;
     }
 
+    /*Header*/
     header h1 {
         font-size: 3em;
     }
@@ -448,10 +485,21 @@ footer p {
         margin-left: 2%;
     }
 
+    header input:first-child {
+        width: 50%;
+        font-size: 1.2em;
+    }
+
+    header input:last-child {
+        width: 20%;
+        font-size: 1.2em;
+    }
+
     .ico {
         visibility: hidden;
     }
 
+    /*General*/
     .wrapper {
         width: 100%;
     }
@@ -469,14 +517,12 @@ footer p {
         border: none;
         font-size: 1em;
     }
-
     ul.rig li img {
         width: 100%;
         height: auto;
         margin: 0 0 10px;
         border: 1px solid #000;
     }
-
     ul.rig li h3 {
         margin: 0 0 5px;
         font-size: 1.3em;
@@ -485,7 +531,7 @@ footer p {
         line-height: 1.5em;
         color: #999;
     }
-
+    /*Page Select*/
     .page_select_list {
         width: 94%;
         margin-left: -4%;
@@ -493,10 +539,21 @@ footer p {
 }
 
 @media (max-width: 400px) {
+    /*Header*/
     header p {
         font-size: 1.2em;
     }
 
+    header input:first-child {
+        width: 50%;
+        font-size: 1.2em;
+    }
+
+    header input:last-child {
+        width: 25%;
+        font-size: 1.2em;
+    }
+    /*Page Select*/
     .page_select_list {
         width: 94%;
         margin-left: -7%;
