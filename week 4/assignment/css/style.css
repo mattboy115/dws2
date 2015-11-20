@@ -337,7 +337,7 @@ footer p {
     }
 
     nav .sign {
-        margin-left: 5%;
+        margin-left: 8%;
         margin-top: 30px;
         display: block;
     }
@@ -447,6 +447,7 @@ footer p {
 
     nav .nav_list {
         margin-top: 0;
+        margin-left: -.5%;
     }
 
     nav .nav_list li {
@@ -458,7 +459,7 @@ footer p {
     }
 
     .sign {
-        margin-right: -4%;
+        margin-right: 5%;
     }
 
     nav .sign li {
